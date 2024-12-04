@@ -1,6 +1,6 @@
 # Deploy an ICP ledger locally
 
-This example shows how to deploy an ICP ledger locally. It mainly follows this [instructions](https://internetcomputer.org/docs/current/developer-docs/defi/tokens/ledger/setup/icp_ledger_setup#deploying-the-ledger-locally). 
+This example shows how to deploy an ICP ledger locally. It mainly follows this [instruction](https://internetcomputer.org/docs/current/developer-docs/defi/tokens/ledger/setup/icp_ledger_setup#deploying-the-ledger-locally). 
 
 
 ## Configure the dfx.json file
@@ -52,7 +52,7 @@ will get
 
 ### Minting
 
-Minting is a transfer call from the minting account. You can run below command to mint from the minting account.
+Minting is a transfer call from the minting account. You can run the below command to mint from the minting account.
 
 ```bash
 dfx ledger transfer --amount 100 --memo 12345 --fee 0 8494c01329531c06254ff45dad87db806ae6ed935ad6a504cdbc00a935db7b49 --identity minter
