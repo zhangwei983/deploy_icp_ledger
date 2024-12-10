@@ -21,15 +21,15 @@ dfx identity new minter
 > You can use an existing identity as the minting account without creating a new one.
 > Make sure you replace the `minter` identity in the commands in the following steps with the right identity.
 
-## Run `dfx deps`
-
-### Start dfx
+## Start dfx
 
 Please run the below command to start dfx locally.
 
 ```bash
 dfx start --clean --background
 ```
+
+## Run `dfx deps`
 
 ### Pull the dependent ICP ledger canister
 
@@ -63,7 +63,7 @@ It will generate the `deps/init.json` file which contains the init argument in t
 > [!WARNING]
 > Please replace the `minter` identity with the right identity if you didn't create it in the previous step.
 
-### Deploy the ICP ledger locally`
+### Deploy the ICP ledger locally
 
 Please run the below command to deploy the ICP ledger locally.
 

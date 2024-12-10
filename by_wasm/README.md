@@ -32,7 +32,7 @@ Please replace them with your account, run `dfx ledger account-id` to get the ac
   `dfx deploy --specified-id ryjl3-tyaaa-aaaaa-aaaba-cai icp_ledger`
   Use `--specified-id` to specify the exact same canister id as the one of the ICP ledger on the mainnet.
 
-## Interact with the ledger
+## Interact with the ICP ledger
 
 Run
 ```bash
