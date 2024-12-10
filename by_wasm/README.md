@@ -60,5 +60,7 @@ Minting is a transfer call from the minting account. You can run the below comma
 dfx ledger transfer --amount 100 --memo 12345 --fee 0 8494c01329531c06254ff45dad87db806ae6ed935ad6a504cdbc00a935db7b49 --identity minter
 ```
 
-- Make sure you're using the minting identity which is consistent with the minting account you set in the dfx.json file
-- For minting operation, the `--fee` has to be `0`.
+> [!WARNING]
+> - Make sure you're using the minting identity which is consistent with the minting account you set in the dfx.json file.
+> - Please replace the `8494c01329531c06254ff45dad87db806ae6ed935ad6a504cdbc00a935db7b49` with the account that you want to receive ICP tokens.
+> - For minting operation, the `--fee` has to be `0`.

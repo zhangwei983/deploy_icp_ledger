@@ -1,6 +1,9 @@
 # Deploy an ICP ledger locally by using `dfx deps`
 
-This example shows how to deploy an ICP ledger locally by using `dfx deps`. It's a new feature in dfx which requires version `0.24.3` or above.
+This example shows how to deploy an ICP ledger locally by using `dfx deps`. 
+
+> [!NOTE]
+> This is a new feature which requires dfx version `0.24.3` or above.
 
 ## Configure the dfx.json file
 
@@ -33,7 +36,7 @@ dfx start --clean --background
 Please run the below command to pull the ICP ledger canister.
 
 ```bash
-`dfx deps pull --network local`
+dfx deps pull --network local
 ```
 
 You will find a `deps` folder under your project directory, with a `pulled.json` file which contains informations about the ICP ledger.
@@ -96,5 +99,7 @@ Minting is a transfer call from the minting account. You can run the below comma
 dfx ledger transfer --amount 100 --memo 12345 --fee 0 8494c01329531c06254ff45dad87db806ae6ed935ad6a504cdbc00a935db7b49 --identity minter
 ```
 
-- Make sure you're using the minting identity which is consistent with the minting account you set in the dfx.json file
-- For minting operation, the `--fee` has to be `0`.
+> [!WARNING]
+> - Make sure you're using the minting identity which is consistent with the minting account you set in the dfx.json file.
+> - Please replace the `8494c01329531c06254ff45dad87db806ae6ed935ad6a504cdbc00a935db7b49` with the account that you want to receive ICP tokens.
+> - For minting operation, the `--fee` has to be `0`.
