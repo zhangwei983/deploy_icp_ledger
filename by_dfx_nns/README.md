@@ -148,3 +148,6 @@ The log shows there are two default testing accounts:
 - `2b8fbde99de881f695f279d2a892b1137bfe81a42d7694e064b1be58701e1138`
 
 Not sure where they come from.
+
+Update:  
+[Here](https://internetcomputer.org/docs/current/developer-docs/developer-tools/cli-tools/cli-reference/dfx-nns#example-accessing-icp-on-the-command-line) describes the origination of these two accounts. You can still use `--ledger-accounts` to add extra testing accounts.
