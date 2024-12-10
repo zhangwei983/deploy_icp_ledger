@@ -48,7 +48,7 @@ Please run the below command to prepare the init arguments for the ICP ledger.
 ```bash
 dfx deps init ryjl3-tyaaa-aaaaa-aaaba-cai --argument "(variant { \
   Init = record {\
-    minting_account = \"$(dfx --identity minter ledger account-id)\";\
+    minting_account = \"$(dfx ledger account-id --identity minter)\";\
     initial_values = vec {};\
     send_whitelist = vec {};\
     transfer_fee = opt record { e8s = 10_000 : nat64; };\
@@ -96,10 +96,10 @@ will get
 Minting is a transfer call from the minting account. You can run the below command to mint from the minting account.
 
 ```bash
-dfx ledger transfer --amount 100 --memo 12345 --fee 0 8494c01329531c06254ff45dad87db806ae6ed935ad6a504cdbc00a935db7b49 --identity minter
+dfx ledger transfer --amount 100 --memo 12345 --fee 0 $(dfx ledger account-id) --identity minter
 ```
 
 > [!WARNING]
 > - Make sure you're using the minting identity which is consistent with the minting account you set in the dfx.json file.
-> - Please replace the `8494c01329531c06254ff45dad87db806ae6ed935ad6a504cdbc00a935db7b49` with the account that you want to receive ICP tokens.
-> - For minting operation, the `--fee` has to be `0`.
+> - Please make sure `$(dfx ledger account-id)` is the account that you want to receive ICP tokens.
+> - For minting/burning operation, the `--fee` has to be `0`.
