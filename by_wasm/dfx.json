@@ -1,6 +1,6 @@
 {
   "canisters": {
-    "icp_ledger_canister": {
+    "icp_ledger": {
       "type": "custom",
       "candid": "https://raw.githubusercontent.com/dfinity/ic/f9085dbe8d86dcca77b05adaee93d608498dae0b/rs/ledger_suite/icp/ledger.did",
       "wasm": "https://download.dfinity.systems/ic/f9085dbe8d86dcca77b05adaee93d608498dae0b/canisters/ledger-canister.wasm.gz",
