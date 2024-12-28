@@ -136,6 +136,15 @@ If you add the ledger account to the previous initialization step, you will see 
 
 The log shows the ledger minting account is `082ecf2e3f647ac600f43f38a68342fba5b8e68b085f02592b77f39808a8d2b5`, not sure where it comes from.
 
+Update:  
+`082ecf2e3f647ac600f43f38a68342fba5b8e68b085f02592b77f39808a8d2b5` is the account id of the `nns-governance` canister.
+
+Please run the below command to verify.
+
+```bash
+dfx ledger account-id --of-principal rrkah-fqaaa-aaaaa-aaaaq-cai
+```
+
 ### Minting ICP
 
 For now, adding testing ledger accounts is the only way to get testing ICP tokens while installing nns canisters. Not sure how to set up a minting account that can be used to transfer ICP tokens without limitations.
